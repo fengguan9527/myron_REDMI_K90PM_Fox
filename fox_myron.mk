@@ -54,6 +54,6 @@ OF_OPTIONS_LIST_NUM := 6
 # 语言 / 时区
 # ─────────────────────────────────────────────────────────
 # 默认时区：亚洲/上海（东八区）
-OF_DEFAULT_TIMEZONE := "Asia/Shanghai"
+OF_DEFAULT_TIMEZONE := Asia/Shanghai
 # 默认语言：简体中文
 OF_LANGUAGE := zh_CN
