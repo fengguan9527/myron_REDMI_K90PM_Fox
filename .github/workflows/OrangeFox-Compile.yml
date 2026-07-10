@@ -16,8 +16,8 @@ on:
         type: choice
         options:
         - 16.0
+        - 14.1
         - 12.1
-        - 11.0
       SYNC_REPO:
         description: 'sync 仓库地址'
         required: true
@@ -100,7 +100,7 @@ jobs:
     # 3. 同步 OrangeFox 源码
     # ──────────────────────────────────────────────────
     - name: 同步源码
-      if: inputs.MANIFEST_BRANCH == '16.0' || inputs.MANIFEST_BRANCH == '12.1' || inputs.MANIFEST_BRANCH == '11.0'
+      if: inputs.MANIFEST_BRANCH == '16.0' || inputs.MANIFEST_BRANCH == '14.1' || inputs.MANIFEST_BRANCH == '12.1'
       run: |
         mkdir -p ${GITHUB_WORKSPACE}/OrangeFox
         cd ${GITHUB_WORKSPACE}/OrangeFox
