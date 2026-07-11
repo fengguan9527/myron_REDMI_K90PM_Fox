@@ -238,8 +238,10 @@ TW_DEFAULT_BRIGHTNESS    := 1200
 TW_MAX_BRIGHTNESS        := 4094
 TW_NO_SCREEN_BLANK  := true
 TW_SCREEN_BLANK_ON_BOOT  := true
-TW_Y_OFFSET              := 141
-TW_H_OFFSET              := -141
+TARGET_SCREEN_WIDTH      := 1200
+TARGET_SCREEN_HEIGHT     := 2608
+#TW_Y_OFFSET              := 141
+#TW_H_OFFSET              := -141
 TW_STATUS_ICONS_ALIGN    := center
 
 
@@ -321,7 +323,7 @@ TW_BATTERY_SYSFS_WAIT_SECONDS := 8
 # Misc
 # ─────────────────────────────────────────────────────────
 TW_EXTRA_LANGUAGES    := true
-TW_DEFAULT_LANGUAGE   := en
+TW_DEFAULT_LANGUAGE   := zh_CN
 # Blacklist non-touch input devices to prevent OFox polling ghost events
 # qcom-hv-haptics: FF-only device, no touch events, causes poll stall
 # uinput-xiaomi:   virtual key device, not a real touchscreen
@@ -333,9 +335,6 @@ TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone45/temp"
 TW_BACKUP_EXCLUSIONS  := /data/fonts
 TW_DEVICE_VERSION     := REDMI_K90_Pro_Max
-
-#Toybox
-TW_USE_TOOLBOX := true
 
 #解密Data
 TW_INCLUDE_OMAPI := true
